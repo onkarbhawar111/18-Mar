@@ -1,0 +1,235 @@
+/* *{
+    background-color: aqua;
+}
+
+h1{
+    color: blue;
+} */
+
+/* .cls1{
+    background-color: yellow;
+}
+
+.cls2{
+    color: rgb(27, 237, 156);
+} */
+
+/* h2{
+    color: red;
+} */
+
+/* #x101{
+    color: red;
+}
+
+#a1{
+    color: brown;
+} */
+
+/* h2, div{
+    background-color: lightgrey;
+} */
+
+/* #x101, #a1, div, .cls2{
+    background-color: lightgray;
+} */
+
+/* div p{
+    color: red;
+} */
+
+/* div > section{
+    color: blue;
+} */
+
+
+/* p{ */
+    /* font-family: Arial, Comic Sans MS, sans-serif ;
+    font-size: 10px; */
+    /* font-family: "Dancing Script", cursive; */
+    /* font-weight: bold; */
+
+
+    /* color: rgb(100, 255, 100); */
+    /* background-color: #000; */
+    /* color: yellow; */
+    /* background-color: rgba(0, 0, 255, 0.9); */
+/* } */
+
+/* img{
+    opacity: 0.2;
+} */
+
+
+/* #d111{
+
+    background: linear-gradient(to right, red, yellow);
+    height: 100px;
+} */
+
+/* #d222{
+    height: 300px;
+    width: 300px;
+    background: radial-gradient(red 50%, blue, white);
+} */
+
+/* #d111{
+    background-image: url('https://picsum.photos/id/237/250');
+    background-repeat: no-repeat;
+
+    height: 1000px;
+} */
+
+/* div{
+    border: 2px solid #000;
+    border-width: 2px;
+    height: 100px;
+    width: 150px;
+    border-radius: 8px;
+    border-style: double;
+} */
+
+/* #d111{
+    color: red;
+    background-color: black;
+    BORDER: 2px solid blue;
+    padding: 10px;
+    margin: 10px;
+}
+
+#d222{
+    border: 2px double red;
+    margin: 10px;
+} */
+
+/* div{
+    background-color: blue;
+    height: 100px;
+    width: 70px;
+    margin-bottom: 10px;
+    display: none;
+    visibility: hidden;
+}
+
+span{
+    background-color: yellow;
+    height: 70px;
+    width: 70px;
+    display: none;
+    visibility: hidden;
+} */
+
+
+/* .container{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column-reverse;
+}
+
+.box{
+    height: 20px;
+    width: 20px;
+    border: 2px solid black;
+    border-radius: 4px;
+    margin: 2px;
+}
+
+.box1{
+    background-color: blue;
+}
+.box2{
+    background-color: yellow;
+}
+.box3{
+    background-color: red;
+}
+.box4{
+    background-color: green;
+} */
+
+/* p{
+    text-align: right;
+} */
+
+/* div{
+    margin: 0 auto;
+    width: 70px;
+    background-color: aqua;
+} */
+
+/* #i9{
+    vertical-align: middle;
+} */
+/* 
+button{
+    position: sticky;
+    top: 0px;
+} */
+
+/* button{
+    background-color: aqua;
+    color: yellow;
+} */
+/* button:hover{
+    background-color: black;
+    color: red;
+    padding: 10px;
+} */
+
+/* button:active{
+    color: red;
+    padding: 10px;
+} */
+
+/* button:not(:hover){
+    background-color: lawngreen;
+} */
+
+/* ul li:nth-child(2n-1){
+    background-color: yellow;
+} */
+
+/* ul li:hover{
+    background-color: yellow;
+}
+ul li:not(:hover){
+    background-color: grey;
+} */
+
+div{
+    background-color: aqua;
+    height: 100px;
+    width: 100px;
+    cursor: crosshair;
+    animation-name: colorChange;
+    animation-duration: 2s;
+    animation-iteration-count: 1;
+
+}
+
+
+@keyframes slideLeft {
+    from{ transform: translateX(100%) }
+}
+@keyframes slideRight {
+    to{transform: translateX(100px);}
+}
+@keyframes grow {
+    50%{transform: scale(2, 2)}
+}
+@keyframes shrink {
+    50%{transform: scale(0.5, 0.5)}
+}
+
+@keyframes rotate{
+    50%{transform: rotateZ(360deg);}
+}
+
+@keyframes colorChange {
+    0%{background-color: red;}
+    20%{background-color: blue;}
+    40%{background-color: yellow;}
+    60%{background-color: pink;}
+    80%{background-color: black;}
+    100%{background-color: grey;}
+}
