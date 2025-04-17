@@ -694,5 +694,81 @@
 // let y = document.getElementById('q987')
 // console.log(y.textContent)
 
-let x = document.getElementsByClassName('cls1')
-console.log(x[2].textContent)
+// let x = document.getElementsByClassName('cls1')
+// console.log(x[0].textContent)
+
+// let element = document.getElementsByTagName('h2');
+
+// console.log(element[0].textContent)
+
+// let x = document.querySelector('h2')
+// console.log(x.textContent)
+
+// let x = document.querySelector('.cls1')
+// console.log(x.textContent)
+
+// let y = document.querySelector('#z111')
+// console.log(y.textContent)
+
+// let x = document.querySelectorAll('.cls1')
+// console.log(x[2].textContent)
+
+// let x = document.querySelectorAll('.cls1')
+// console.log(x[2].textContent)
+
+// let x = document.querySelectorAll('h2')
+// console.log(x[2].textContent)
+
+// let x = document.getElementById('z111')
+// console.log(x.tagName)
+
+// let x = document.getElementById('myDiv')
+// // console.log(x.textContent)
+
+
+// x.textContent = 'Good Evening'
+
+// let x = document.querySelector('img')
+
+// // x.setAttribute('src', 'https://cdn.pixabay.com/photo/2016/07/07/16/46/dice-1502706_640.jpg')
+
+// // x.setAttribute('alt', 'New Image description')
+
+// const y = x.getAttribute('alt')
+// console.log(y)
+
+
+// let x = document.querySelector('h1')
+// x.style.color = 'red'
+// x.style.border = '12px solid blue'
+
+
+
+// console.log(x.style.border)
+
+
+// let x = document.getElementById('id9')
+// let y = document.createElement('span')
+// y.textContent = ' span text '
+
+// x.append(y)
+// x.prepend(y)
+// x.after(y)
+// x.before(y)
+
+// x.remove()
+
+let x = document.querySelectorAll('button')
+
+x[0].onclick = () => {
+    console.log('Button 1 clicked....')
+}
+
+x[1].ondblclick = () => {
+    console.log('Button 2 clicked.....')
+}
+
+let y = document.querySelector('div')
+y.onmouseover = () => {
+    console.log('inside div')
+}
