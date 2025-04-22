@@ -656,7 +656,7 @@
 
 //THROW - to explicitly throw an error
 
-// function getRectArea(width, height) {  //width=3, height='five'
+// function getRectArea(width, height) {  //width=3, height=5
 //     if (isNaN(width) || isNaN(height)) {
 //         throw new Error('Parameter is not a number!!!!');
 //     }
@@ -667,7 +667,6 @@
 // } catch (e) {
 //     console.error(e);
 // }
-
 
 
 
@@ -758,17 +757,220 @@
 
 // x.remove()
 
-let x = document.querySelectorAll('button')
+// let x = document.querySelectorAll('button')
 
-x[0].onclick = () => {
-    console.log('Button 1 clicked....')
-}
+// x[0].onclick = (e) => {
+//     console.log('Button 1 clicked....')
+//     console.log(e.type)
+// }
 
-x[1].ondblclick = () => {
-    console.log('Button 2 clicked.....')
-}
+// x[1].ondblclick = (e) => {
+//     console.log('Button 2 clicked.....')
+//     console.log(e)
+// }
 
-let y = document.querySelector('div')
-y.onmouseover = () => {
-    console.log('inside div')
-}
+// let y = document.querySelector('div')
+// y.onmouseover = () => {
+//     console.log('inside div')
+// }
+
+// let x =  document.querySelector('button')
+// const y = function(){
+//     console.log('Btn was clicked........')
+// }
+// x.addEventListener('click', y)
+
+// x.addEventListener('mouseover', function(){
+//     console.log('u r hovering over btn')
+// })
+
+// x.removeEventListener('click', y)
+
+// let element = document.querySelector('button')
+
+// element.ondblclick = (e) =>{
+//     console.log(e.clientX);
+//     console.log(e.clientY);
+// }
+
+
+
+
+
+
+// class Person {
+//     constructor(name, age) {   //name:'Onkar', age=25
+//         this.name = name;
+//         this.age = age;
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name} and I am ${this.age} years old.`);
+//     }
+// }
+
+// const person1 = new Person('Onkar', 25);  //object creation
+// console.log(person1.name)
+// console.log(person1.age)
+
+// person1.greet();
+
+
+// class Employee extends Person {
+//     constructor(name, age, job) {
+//       super(name, age);  // Calls the parent class's constructor
+//       this.job = job;
+//     }
+
+//     work() {
+//       console.log(`${this.name} is working as a ${this.job}.`);
+//     }
+//   }
+
+//   const employee1 = new Employee('Bob', 30, 'Developer');
+//   employee1.greet();   // Output: Hello, my name is Bob and I am 30 years old.
+//   employee1.work();    // Output: Bob is working as a Developer.
+
+
+// class Animal {
+//     speak() {
+//         console.log('Animal speaks');
+//     }
+// }
+
+// class Dog extends Animal {
+//     speak() {
+//         super.speak();  // Calls the parent class's speak method
+//         console.log('Dog barks');
+//     }
+// }
+
+// const dog = new Dog();
+// dog.speak();
+// // Output:
+// // Animal speaks
+// // Dog barks
+
+
+// class Person {
+//     constructor(name, age) {
+//         this.name = name; // Public property
+//         let _age = age; // Private variable (not accessible outside)
+
+//         this.getAge = function () {
+//             return _age;
+//         };
+
+//         this.setAge = function (newAge) {
+//             if (newAge > 0) _age = newAge;
+//             else console.log("Invalid age");
+//         };
+//     }
+
+//     greet() {
+//         console.log(`Hello, my name is ${this.name}`);
+//     }
+// }
+
+// const person1 = new Person("Onkar", 26);
+// console.log(person1.age); // Onkar
+// console.log(person1.getAge()); // 25
+
+// person1.setAge(30);
+// console.log(person1.getAge()); // 30
+
+// person1.setAge(-5); // Invalid age
+
+
+// class Car {
+//     constructor(model) {
+//       this.model = model;
+//     }
+
+//     start() {
+//       console.log("Car is starting...");
+//       this._fuelInjection(); // Private method
+//     }
+
+//     _fuelInjection() {
+//       console.log("Fuel injection process...");
+//     }
+//   }
+
+//   const car1 = new Car("Tata");
+//   car1.start();  
+
+
+
+
+// class Animal {
+//     constructor(name) {
+//         this.name = name;
+//     }
+
+//     speak() {
+//         console.log(`${this.name} makes a sound`);
+//     }
+// }
+
+// class Dog extends Animal {
+//     constructor(name, breed) {
+//         super(name); // Call parent constructor
+//         this.breed = breed;
+//     }
+
+//     // speak() {
+//     //     console.log(`${this.name} barks`);
+//     // }
+// }
+
+// const dog1 = new Dog("Buddy", "Golden Retriever");
+// dog1.speak(); // Output: Buddy barks
+
+
+// class Animal {
+//     speak() {
+//         console.log("This animal makes a sound");
+//     }
+// }
+
+// class Cat extends Animal {
+//     speak() {
+//         console.log("Meow Meow!");
+//     }
+// }
+
+// class Dog extends Animal {
+//     speak() {
+//         console.log("Woof Woof!");
+//     }
+// }
+
+// const animals = [new Animal(), new Cat(), new Dog()];
+
+// animals.forEach((animal) => animal.speak());
+
+
+//Synchronous
+// console.log('Start');
+
+// for (let i = 0; i < 3; i++) {
+//   console.log(i);
+// }
+
+// console.log('End');
+
+
+
+//ASynchronous
+
+
+// console.log('Start');
+
+// setTimeout(() => {      
+//   console.log('Asynchronous task'); 
+// }, 2000);
+
+// console.log('End');
+
+
