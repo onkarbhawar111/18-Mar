@@ -974,3 +974,102 @@
 // console.log('End');
 
 
+//sync callback
+// function greet(name, callback) {
+//     console.log('Hello, ' + name);
+//     callback(); // Synchronous callback
+// }
+
+// function afterGreet() {
+//     console.log('Greeting completed.');
+// }
+
+// greet('Onkar', afterGreet);
+
+//async callback
+// function fetchData(xyz) {
+//     setTimeout(() => {
+//         console.log('Data fetched from server');
+//         xyz(); // Asynchronous callback
+//     }, 2000); 
+// }
+
+// function processData() {
+//     console.log('Processing fetched data...');
+// }
+
+// console.log('Start');
+// fetchData(processData);                                      
+// console.log('End');
+
+// function greet(name) {
+//     return `Hello, ${name}!`;
+// }
+
+// function processUserInput(callback) {
+//     const userName = "Onkar";
+//     return callback(userName); // Passing greet as the callback
+// }
+
+// console.log(processUserInput(greet)); // Output: Hello, John!
+
+
+// function multiplier(factor) {
+//     return function (num) {
+//         return num * factor;
+//     };
+// }
+
+// // const double = multiplier(2); // Returns a function that doubles a number
+// const triple = multiplier(3); // Returns a function that triples a number
+
+// // console.log(double(5)); // Output: 10
+// console.log(triple(5)); // Output: 15
+
+
+
+// setTimeout(() => {
+//     console.log('Step 1: Prepare ingredients');
+//     setTimeout(() => {
+//         console.log('Step 2: Cook food');
+//         setTimeout(() => {
+//             console.log('Step 3: Serve food');
+//             setTimeout(() => {
+//                 console.log('Step 4: Clean dishes');
+//             }, 1000);
+//         }, 1000);
+//     }, 1000);
+// }, 1000);
+
+// let promise = new Promise(function (resolve, reject) {
+//     let isLogin = true;
+//     if (isLogin) {
+//         setTimeout(() => {
+//             resolve("You are logged in...")
+//         });
+//     } else {
+//         reject("You are not logged in. Please Login")
+//     }
+// })
+// console.log(promise)
+
+// // console.log(promise)
+// promise.then((res) => {
+//     console.log("Result: ", res)
+// }).catch((err) => {
+//     console.log("Error: ", err)
+// })
+
+// async function getData() {
+//     let result = await fetch("https://jsonplaceholder.typicode.com/users");
+//     let data = await result.json(); // Extract the JSON body
+//     console.log(data);
+// }
+// getData();
+// console.log(2 + 3);
+
+
+  
+
+console.log('End')
+
